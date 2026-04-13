@@ -1,4 +1,4 @@
-# devfolio
+# Devfolio
 
 A personal developer portfolio website built with React, Framer Motion, and Formspree.
 
