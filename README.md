@@ -1,16 +1,93 @@
-# React + Vite
+# devfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A personal developer portfolio website built with React, Framer Motion, and Formspree.
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- **React** — Component-based UI
+- **Framer Motion** — Animations and page transitions
+- **Formspree** — Contact form handling (no backend required)
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Smooth animations and transitions powered by Framer Motion
+- Responsive layout across all screen sizes
+- Functional contact form via Formspree
+- Fast and lightweight — no backend needed
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Prerequisites
+
+- Node.js (v16 or higher)
+- npm or yarn
+
+### Installation
+
+```bash
+git clone https://github.com/your-username/devfolio.git
+cd devfolio
+npm install
+```
+
+### Running Locally
+
+```bash
+npm run dev
+```
+
+The app will be available at `http://localhost:5173` (or `http://localhost:3000` depending on your setup).
+
+### Building for Production
+
+```bash
+npm run build
+```
+
+## Configuration
+
+### Contact Form (Formspree)
+
+The contact form is powered by [Formspree](https://formspree.io). To connect it to your own account:
+
+1. Create a free account at [formspree.io](https://formspree.io)
+2. Create a new form and copy your form endpoint
+3. Replace the form action URL in the contact component with your endpoint:
+
+```js
+const FORMSPREE_ENDPOINT = "https://formspree.io/f/your-form-id";
+```
+
+## Deployment
+
+This site can be deployed to any static hosting provider:
+
+- **Vercel** — `vercel deploy`
+- **Netlify** — drag and drop the `dist/` folder or connect via Git
+- **GitHub Pages** — use the `gh-pages` package
+
+## Project Structure
+
+```
+devfolio/
+├── public/
+├── src/
+│   ├── components/
+│   │   ├── Footer.jsx
+│   │   ├── ThemeToggle.jsx
+│   │   └── Navbar.jsx
+│   ├── sections/
+│   │   ├── Contact.jsx
+│   │   ├── Experience.jsx
+│   │   ├── HeroProject.jsx
+│   │   └── Skill.jsx
+│   ├── assets/
+│   ├── App.jsx
+│   └── main.jsx
+├── index.html
+└── package.json
+```
+
+## License
+
+MIT
