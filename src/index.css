@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap');
+
+@import "tailwindcss";
+
+/* Class-based dark mode — replaces darkMode: 'class' in v3 config */
+@variant dark (&:where(.dark, .dark *));
+
+/* All custom tokens live here — replaces tailwind.config.js theme.extend */
+@theme {
+  --color-brand-50:  #f5f3ff;
+  --color-brand-100: #ede9fe;
+  --color-brand-200: #ddd6fe;
+  --color-brand-300: #c4b5fd;
+  --color-brand-400: #a78bfa;
+  --color-brand-500: #8b5cf6;
+  --color-brand-600: #7c3aed;
+  --color-brand-700: #6d28d9;
+  --color-brand-800: #5b21b6;
+  --color-brand-900: #4c1d95;
+
+  --font-sans: 'Inter', system-ui, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+
+  --radius-xl:  0.875rem;
+  --radius-2xl: 1.25rem;
+
+  --shadow-glow: 0 0 0 4px rgb(139 92 246 / 0.2);
+}
+
+@layer base {
+  html  { scroll-behavior: smooth; }
+  body  { @apply bg-white text-zinc-900 antialiased dark:bg-zinc-950 dark:text-zinc-100; }
+  *:focus         { outline: none; }
+  *:focus-visible { @apply ring-2 ring-brand-500 ring-offset-2 dark:ring-offset-zinc-950; }
+}
+
+@layer utilities {
+  .text-gradient {
+    @apply bg-linear-to-r from-brand-500 to-violet-400 bg-clip-text text-transparent;
+  }
+}
+.typewriter-text span {
+  font-size: 2rem !important;
+  font-weight: 700;
+}
