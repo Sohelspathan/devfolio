@@ -3,8 +3,8 @@ import Typewriter from "typewriter-effect";
 import ScrollToNext from "../components/ScrollToNext";
 
 const socials = [
-  { label: "GitHub", href: "https://github.com" },
-  { label: "LinkedIn", href: "https://linkedin.com" },
+  { label: "GitHub", href: "https://github.com/Sohelspathan" },
+  { label: "LinkedIn", href: "https://www.linkedin.com/in/sohelpathan1/" },
 ];
 
 const fadeUp = { hidden: { opacity: 0, y: 24 }, show: { opacity: 1, y: 0 } };

@@ -7,7 +7,7 @@ const projects = [
     tags: ['React', 'Tailwind v4', 'Framer Motion'],
     color: 'bg-violet-100 dark:bg-violet-950',
     accent: 'bg-violet-500',
-    live: 'https://flowlytics.vercel.app',
+    live: 'https://flowlytics-three.vercel.app/',
     github: 'https://github.com/Sohelspathan/Flowlytics',
   },
   {
@@ -16,7 +16,7 @@ const projects = [
     tags: ['React', 'Formspree', 'Vercel'],
     color: 'bg-teal-100 dark:bg-teal-950',
     accent: 'bg-teal-500',
-    live: 'https://menuboard.vercel.app',
+    live: 'https://la-maison-eight.vercel.app/',
     github: 'https://github.com/Sohelspathan/La-Maison',
   },
   // {
