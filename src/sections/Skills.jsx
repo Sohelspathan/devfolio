@@ -3,7 +3,7 @@ import { motion } from "framer-motion";
 const categories = [
   {
     name: "Core",
-    skills: ["React 18", "TypeScript", "JavaScript ES2024", "HTML5", "CSS3"],
+    skills: ["React 18", "JavaScript ES2024", "HTML5", "CSS3"],
   },
   {
     name: "Styling",
@@ -90,8 +90,8 @@ export default function Skills() {
               {[
                 { val: "6+", label: "Months freelancing" },
                 { val: "5+", label: "Projects shipped" },
-                { val: "2+", label: "Happy clients" },
-                { val: "24/7", label: "Quick support" },
+                { val: "100%", label: "On-time delivery" },
+                { val: "< 48h", label: "Response time" },
               ].map(({ val, label }) => (
                 <div key={label}>
                   <p className="text-2xl font-bold text-white">{val}</p>

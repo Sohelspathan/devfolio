@@ -54,7 +54,7 @@ export default function Hero() {
         </motion.h1>
 
         {/* Typewriter effect */}
-        <h1 className="text-5xl md:text-5xl font-bold tracking-tight text-zinc-900 dark:text-white mb-4 leading-tight">
+        <h2 className="text-5xl md:text-5xl font-bold tracking-tight text-zinc-900 dark:text-white mb-4 leading-tight">
           <div>
             <Typewriter
               options={{
@@ -62,7 +62,7 @@ export default function Hero() {
                   "Frontend Developer",
                   "React Specialist",
                   "UI Engineer",
-                  "Freelancer",
+                  "Motion Developer",
                 ],
                 autoStart: true,
                 loop: true,
@@ -73,7 +73,7 @@ export default function Hero() {
               }}
             />
           </div>
-        </h1>
+        </h2>
 
         {/* Bio */}
         <motion.p
