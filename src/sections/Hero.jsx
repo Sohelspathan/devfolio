@@ -65,7 +65,7 @@ export default function Hero() {
                   "Motion Developer",
                 ],
                 autoStart: true,
-                loop: true,
+                loop: false,
                 cursor: "|",
                 delay: 50,
                 deleteSpeed: 50,
