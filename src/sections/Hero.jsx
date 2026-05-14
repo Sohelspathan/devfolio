@@ -60,16 +60,16 @@ export default function Hero() {
               options={{
                 strings: [
                   "Frontend Developer",
-                  "React Specialist",
-                  "UI Engineer",
-                  "Motion Developer",
+                  // "React Specialist",
+                  // "UI Engineer",
+                  // "Motion Developer",
                 ],
                 autoStart: true,
-                loop: false,
+                loop: true,
                 cursor: "|",
                 delay: 50,
                 deleteSpeed: 50,
-                pauseFor: 1500,
+                pauseFor: 5500,
               }}
             />
           </div>
